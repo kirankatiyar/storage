@@ -1,0 +1,30 @@
+//............................................REVISION..................................................|||
+package prog;
+import java.util.Scanner;
+public class Revision {
+    int b;        //INSTANCE VARIABLE......
+
+    void check_num() {       // method
+        if (b % 2 == 0) {
+            System.out.println("even number");
+        }
+    }
+
+    class Revision_2{
+    void num_check(){
+        System.out.println("odd number");
+    }
+    }
+    public static void main(String[] arg)
+    {
+        System.out.println("enter a number");
+        Scanner s = new Scanner(System.in);
+        Revision kk=new Revision();
+        kk.b = s.nextInt();
+        Revision ref_obj = new Revision();
+        ref_obj.check_num();
+        Revision_2 sp = new Revision_2();
+        sp.num_check();
+    }
+
+
